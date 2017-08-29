@@ -21,7 +21,14 @@ $(document).ready(function(){
        for (i = 0; i < data2.follows.length; i++){
            var displayName = data2.follows[i].channel.display_name;
            
-           var status = data2.follows[i].channel.status; //add if statement for null to be offline
+           if (data2.follows[i].channel.status){
+               var status = data2.follows[i].channel.status; //add if statement for null to be offline
+            }
+            else {
+                var status = "OFFLINE";   
+            }
+           
+           
            
            if (data2.follows[i].channel.logo){
                 var logo = data2.follows[i].channel.logo;
