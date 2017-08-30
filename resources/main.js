@@ -81,19 +81,16 @@ function renderOfflineFollowers(){
 // controls the buttons: all, online, offline
 $('#show-all').click(function(){
     $('#followerInfo').html("");
-    $('#followerInfo').append('You clicked SHOW ALL');
     renderAllFollowers();
 });   
 
 $('#show-online').click(function(){
     $('#followerInfo').html("");
-    $('#followerInfo').append('You clicked show ONLINE'); 
     renderOnlineFollowers();
 });
 
 $('#show-offline').click(function(){
     $('#followerInfo').html("")
-    $('#followerInfo').append('You clicked show OFFLINE');
     renderOfflineFollowers();
 });
 

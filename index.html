@@ -22,32 +22,51 @@
     <body>
         <div class="container">
             
-            <div id="header" class="text-center jumbotron">
-                <h1>Hello Twitch</h1>
-                <a href="https://www.twitch.tv/freecodecamp">
-                    <h3 id="fccstatus"></h3>
-                </a>
+            <div id="header" class="row text-center">
+                <div class="col-md-12">
+                    <h1>Twitch TV</h1>
+                    <a href="https://www.twitch.tv/freecodecamp">
+                        <h3 id="fccstatus"></h3>
+                    </a>
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button id="show-all" type="button" class="btn btn-default">All</button>
+                      <button id="show-online" type="button" class="btn btn-default">Online</button>
+                      <button id="show-offline" type="button" class="btn btn-default">Offline</button>
+                    </div>
+                </div>
             </div>
+           
             <div>
-                <btn id="show-all" class="btn btn-primary">All</btn>
-                <btn id="show-online" class="btn btn-primary">Online</btn>
-                <btn id="show-offline" class="btn btn-primary">Offline</btn>
+                <div class="row top-row">
+                    <div class="col-md-4">
+                        <h1>Logo:</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>Display Name:</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>Status:</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="followerInfo" class="followers">
             
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h1>Logo:</h1>
-                </div>
-                <div class="col-md-4">
-                    <h1>Display Name:</h1>
-                </div>
-                <div class="col-md-4">
-                    <h1>Status:</h1>
-                </div>
+        <div>    
+           <div class = "row">
+               <div class="col-md-4 col-sm">
+                   <a href="#" target = "_blank"><img src="#" width = "50px"></a>
+               </div>
+               <div class="col-md-4">
+                   <a href="#" target = "_blank"><p>displayName</p></a>
+               </div>
+               <div class="col-md-4">
+                   <p>status</p>
+               </div>
             </div>
-            <div id="followerInfo" >
-                
-            </div>
+           </div>   
+            
 
         </div> <!-- /container -->
 
