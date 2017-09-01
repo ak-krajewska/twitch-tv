@@ -2,8 +2,7 @@ var followsURL = "https://wind-bow.glitch.me/twitch-api/users/freecodecamp/follo
 
 //generic function to write the rows
 function writeRows(data2){
-           
-           if(data2.follows[i].channel.status){
+            if(data2.follows[i].channel.status){
                var status = data2.follows[i].channel.status; 
             }
             else {
@@ -12,7 +11,6 @@ function writeRows(data2){
            
            //assign display name
            var displayName = data2.follows[i].channel.display_name;
-           
         
            //check logo, assign default if falsy            
            if (data2.follows[i].channel.logo){
@@ -25,8 +23,12 @@ function writeRows(data2){
            //assign streamer url
            var streamerURL = "https://twitch.tv/" + displayName;
            
-           
-           $('#followerInfo').append('<div class = "row"><div class="col-md-4"><a href="' + streamerURL + '" target = "_blank"><img src="' + logo + '" width = "50px"></a></div><div class="col-md-4"><a href="' + streamerURL + '" target = "_blank">' + displayName + '</a></div><div class="col-md-4">' + status + '</div></div>'); 
+            //display the row
+            
+            $('#followerInfo').append('<div class = "row followers"><div class="col-md-2"><a href="' + streamerURL + '" target = "_blank"><img src="' + logo + '" width = "50px" class="img-circle"></a></div><div class="col-md-4"><h3><a href="' + streamerURL + '" target = "_blank">' + displayName + '</a></h3></div><div class="col-md-6"><p>' + status + '</p></div></div>'); 
+            
+            //$('#followerInfo').append('<p>' + logo + displayName + status + '</p>');
+            
 }
 
 
@@ -85,10 +87,11 @@ $(document).ready(function(){
     var fccURL = "https://wind-bow.glitch.me/twitch-api/streams/freecodecamp";
     $.getJSON(fccURL, function(data1){
         if(data1.stream===null){
-            $("#fccstatus").html("Free Code Camp is Offline");
+            console.log(data1);
+            $("#fccstatus").html("OFFLINE");
         }
         else{
-            $('#fccstatus').html("Free Code Camp is Streaming Live");
+            $('#fccstatus').html("streaming now");
         }
     });
     
