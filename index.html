@@ -22,35 +22,44 @@
     <body>
         <div class="container">
             
-            <div id="header" class="row text-center">
-                <div class="col-md-12">
-                    <h1>Twitch TV</h1>
-                    <a href="https://www.twitch.tv/freecodecamp">
-                        <h3 id="fccstatus"></h3>
-                    </a>
-                    <div class="btn-group" role="group" aria-label="...">
-                      <button id="show-all" type="button" class="btn btn-default">All</button>
-                      <button id="show-online" type="button" class="btn btn-default">Online</button>
-                      <button id="show-offline" type="button" class="btn btn-default">Offline</button>
-                    </div>
-                </div>
-            </div>
-           
-            <div>
-                <div class="row top-row">
-                    <div class="col-md-4">
-                        <h1>Logo:</h1>
-                    </div>
-                    <div class="col-md-4">
-                        <h1>Display Name:</h1>
-                    </div>
-                    <div class="col-md-4">
-                        <h1>Status:</h1>
-                    </div>
-                </div>
-            </div>
+        <div class="text-center">
+            <h1>Twitch TV Status Checker</h1>
+            <h3><i class="fa fa-free-code-camp" aria-hidden="true"></i> <a href="https://www.twitch.tv/freecodecamp">freeCodeCamp</a> is <span id="fccstatus"></span></h3>
             
-            <div id="followerInfo" class="followers">
+        </div>
+            
+            
+  
+            
+            <!--
+        <div class="btn-group" role="group" aria-label="...">
+            <button id="show-all" type="button" class="btn btn-default">All</button>
+            <button id="show-online" type="button" class="btn btn-default">Online</button>
+            <button id="show-offline" type="button" class="btn btn-default">Offline</button>
+        </div>
+            -->
+                
+        <div>   
+            <div class="row top-row">
+                <div class="col-md-12">
+                    <div class="text-center">          
+                        <h3><label class="radio-inline"><input type="radio" name="optradio" id="show-all">All</label>
+                        <label class="radio-inline"><input type="radio" name="optradio" id="show-online">Online</label>
+                            <label class="radio-inline"><input type="radio" name="optradio" id="show-offline">Offline</label></h3>
+   </div>     
+                </div>
+                
+            </div>
+        </div>    
+            
+         <div>   
+            <div class="row followers">
+                <div class="col-md-2 text-center"><h3>Logo</h3></div>
+                <div class = "col-md-4 text-justify"><h3>Name</h3></div>
+                <div class = "col-md-6 text-justify"><h3>Status</h3></div>
+            </div>
+        </div>
+            <div id="followerInfo">
             
             </div>
         

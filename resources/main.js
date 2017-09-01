@@ -25,7 +25,7 @@ function writeRows(data2){
            
             //display the row
             
-            $('#followerInfo').append('<div class = "row followers"><div class="col-md-2"><a href="' + streamerURL + '" target = "_blank"><img src="' + logo + '" width = "50px" class="img-circle"></a></div><div class="col-md-4"><h3><a href="' + streamerURL + '" target = "_blank">' + displayName + '</a></h3></div><div class="col-md-6"><p>' + status + '</p></div></div>'); 
+            $('#followerInfo').append('<div class = "row followers"><div class="col-md-2 text-center"><a href="' + streamerURL + '" target = "_blank"><img src="' + logo + '" width = "50px" class="img-circle"></a></div><div class="col-md-4 text-justify"><p><a href="' + streamerURL + '" target = "_blank">' + displayName + '</a></p></div><div class="col-md-6 text-justify"><p>' + status + '</p></div></div>'); 
             
             //$('#followerInfo').append('<p>' + logo + displayName + status + '</p>');
             

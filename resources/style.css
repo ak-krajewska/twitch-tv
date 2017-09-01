@@ -11,8 +11,9 @@ img {
     padding: 10px;
 }
 
-.purple {
-    background-color: mediumpurple;
+.text-middle {
+    vertical-align: middle;
+    display: inline-block;
 }
 
 ///////
